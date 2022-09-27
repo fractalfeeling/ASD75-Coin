@@ -17,25 +17,30 @@
 <details><summary><h2>Level 2</h2></summary><p>
   
   The clue from Level 1 refers to the ATBASH cipher. On the tails side, the letters in the outer ring are separated into 2 segments (by •).
-  ```
-  DVZIVZFWZXRLFHRMXLMXVKGZMWNVGRXFOLFHRMVCVXFGRLM
-  URMWXOZIRGBRM7DRWGSC5WVKGS
-  ```
+
+  >DVZIVZFWZXRLFHRMXLMXVKGZMWNVGRXFOLFHRMVCVXFGRLM
+  
+  >URMWXOZIRGBRM7DRWGSC5WVKGS
+
   Decoding the text using this tool (https://www.dcode.fr/atbash-cipher) gives:
-  ```
-  WEAREAUDACIOUSINCONCEPTANDMETICULOUSINEXECUTION
-  FINDCLARITYIN7WIDTHX5DEPTH
-  ```
+
+  >WEAREAUDACIOUSINCONCEPTANDMETICULOUSINEXECUTION
+  
+  >FINDCLARITYIN7WIDTHX5DEPTH
+  
+  Adding proper spacing, the text reads **```WE ARE AUDACIOUS IN CONCEPT AND METICULOUS IN EXECUTION FIND CLARITY IN 7 WIDTH X 5 DEPTH```**
+
   Decoding the inner ring results in gibberish, we will come back to it later.
   
 </p></details>
 
 <details><summary><h2>Level 3</h2></summary><p>
   
-   ```FIND CLARITY IN 7 WIDTH X 5 DEPTH``` this is a clue to a Caesar Box Cipher. 
+   ```FIND CLARITY IN 7 WIDTH X 5 DEPTH```, this is a clue to a Caesar Box Cipher. 
+  
   Now we take the text from the inner ring and fill a table of size 7x5, filling in the letters from left to right gives us two tables.
 
-<div align="center">
+<div>
 <table>
 <tr>
 <td>
@@ -63,7 +68,7 @@
 </table>
 </div>
   
-Reading the tables horizontally gives ```BELONGING TO A GREAT TEAM STRIVING FOR EXCELLENCE WE MAKE A DIFFERENCE XOR HEX A5D75```.
+Reading the tables horizontally gives **```BELONGING TO A GREAT TEAM STRIVING FOR EXCELLENCE WE MAKE A DIFFERENCE XOR HEX A5D75```**.
   
 </p></details>
 
@@ -74,12 +79,38 @@ Reading the tables horizontally gives ```BELONGING TO A GREAT TEAM STRIVING FOR 
   
   The previous clue tells us to XOR this text block with the key ```A5D75```. XOR keys must be in byte(s) (1 byte = 2 hex characters), so we double up the key to ```A5D75A5D75``` for an even number of hex characters. Decoding the text using this tool (https://www.dcode.fr/xor-cipher) gives:
   
-  >For 75 years the Australian Signals Directorate has brought together people with the skills, adaptability and imagination to operate in the slim area between the difficult and the impossible.
+  **```For 75 years the Australian Signals Directorate has brought together people with the skills, adaptability and imagination to operate in the slim area between the difficult and the impossible.```**
   
 </p></details>
 
 <details><summary><h2>Bonus Level</h2></summary><p>
   
+  The inner and outer rings of text are coloured differently. 
   
+  Legend:
+  | Font On Coin | Formatting Style |
+  | --- | --- |
+  | Light | Regular |
+  | Dark | **Bold** |
+  | Striped | ~~Strikethrough~~ |
+  
+  Inner Ring:
+  
+  >B**GOAMV**OE**I**A**TS**IRL**NGT**T**NE**O**GRER**GXNT**EAI**F**C**ECA**IE**O**AL**EK**FN**R**5L**WE**FCHDE**EA**EE**E**7N**MDRXX5
+  
+  The inner ring is encoded in binary, the presence of only two colours is a hint. A common character encoding is ASCII, each character corresponds to a numerical value. Only 7 bits is needed to encode the alphabet in the ASCII table. 
+  
+  Light characters = 1, Dark characters = 0:
+  >1000001101001110001001000011110001011100100110010011000001100100110010
+  
+  Decoding with this tool (https://www.dcode.fr/ascii-code) gives **```ASDCbr2022```**.
+  
+  Outer Ring:
+  >~~.~~**D**VZIV~~Z~~FWZX**R**~~L~~**FHRM**X~~L~~MX**VKG**~~ZM~~W**NV**~~G~~**RXF**~~O~~L**FHR**~~M~~**V**C~~V~~**X**F**GR**~~L~~M.**UR**~~M~~**W**~~X~~**O**Z**I**~~R~~G~~B~~**R**M7**D**~~R~~**W**G~~S~~**C**5**W**~~V~~K**G**S
+  
+  The outer ring is encoded in Morse Code. Striped letters provided clue to being spaces in Morse Code because no consecutive striped letters bar one exception at the top (ZM), which is also a hint to start reading from there. Converting characters to Morse Code with light characters as dots, dark characters as dashes and striped characters as spaces:
+  >-.. ... -... .- .-.. -... . .-. - .--. .- .-. -.- .---- ----. ....- --...
+  
+  Decoding with this tool (https://www.dcode.fr/morse-code) gives **```DSBALBERTPARK1947```**. This is consistent with inner ring’s format of [Organisation][Place][Date] as well.
   
 </p></details>
