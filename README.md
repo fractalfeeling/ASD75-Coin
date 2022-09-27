@@ -19,7 +19,7 @@
 
 <details><summary><h2>Level 2</h2></summary><p>
   
-  The clue from Level 1 refers to the ATBASH cipher. On the tails side, the letters in the outer ring are separated into 2 segments (by •).
+  The clue from Level 1 refers to the ATBASH cipher. On the tails side, the letters in the outer ring are separated by ○ into 2 segments.
 
   >DVZIVZFWZXRLFHRMXLMXVKGZMWNVGRXFOLFHRMVCVXFGRLM
   
@@ -109,7 +109,7 @@ Reading the tables horizontally gives **```BELONGING TO A GREAT TEAM STRIVING FO
   Decoding with this tool (https://www.dcode.fr/ascii-code) gives **```ASDCbr2022```**.
   
   Outer Ring:
-  >~~.~~**D**VZIV~~Z~~FWZX**R**~~L~~**FHRM**X~~L~~MX**VKG**~~ZM~~W**NV**~~G~~**RXF**~~O~~L**FHR**~~M~~**V**C~~V~~**X**F**GR**~~L~~M.**UR**~~M~~**W**~~X~~**O**Z**I**~~R~~G~~B~~**R**M7**D**~~R~~**W**G~~S~~**C**5**W**~~V~~K**G**S
+  >~~ZM~~W**NV**~~G~~**RXF**~~O~~L**FHR**~~M~~**V**C~~V~~**X**F**GR**~~L~~M○**UR**~~M~~**W**~~X~~**O**Z**I**~~R~~G~~B~~**R**M7**D**~~R~~**W**G~~S~~**C**5**W**~~V~~K**G**S~~○~~**D**VZIV~~Z~~FWZX**R**~~L~~**FHRM**X~~L~~MX**VKG**
   
   The outer ring is encoded in Morse Code. Striped letters provided clue to being spaces in Morse Code because no consecutive striped letters bar one exception at the top (ZM), which is also a hint to start reading from there. Converting characters to Morse Code with light characters as dots, dark characters as dashes and striped characters as spaces:
   >-.. ... -... .- .-.. -... . .-. - .--. .- .-. -.- .---- ----. ....- --...
