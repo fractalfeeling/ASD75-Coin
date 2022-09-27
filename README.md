@@ -111,7 +111,7 @@ Reading the tables horizontally gives **```BELONGING TO A GREAT TEAM STRIVING FO
   Outer Ring:
   >~~ZM~~W**NV**~~G~~**RXF**~~O~~L**FHR**~~M~~**V**C~~V~~**X**F**GR**~~L~~M○**UR**~~M~~**W**~~X~~**O**Z**I**~~R~~G~~B~~**R**M7**D**~~R~~**W**G~~S~~**C**5**W**~~V~~K**G**S~~○~~**D**VZIV~~Z~~FWZX**R**~~L~~**FHRM**X~~L~~MX**VKG**
   
-  The outer ring is encoded in Morse Code. Striped letters provided clue to being spaces in Morse Code because there are no consecutive striped letters bar one exception at the top (ZM), which is also a hint to start reading from there. Converting characters to Morse Code with light characters as dots, dark characters as dashes and striped characters as spaces:
+  The outer ring is encoded in Morse Code. Striped letters provided clue to being spaces in Morse Code because there are no consecutive striped letters bar one exception at the top (ZM). This break in the ring is a hint to start reading from there. Converting characters to Morse Code with light characters as dots, dark characters as dashes and striped characters as spaces:
   >-.. ... -... .- .-.. -... . .-. - .--. .- .-. -.- .---- ----. ....- --...
   
   Decoding with this tool (https://www.dcode.fr/morse-code) gives **```DSBALBERTPARK1947```**. This is consistent with inner ring’s format of [Organisation][Place][Date] as well.
