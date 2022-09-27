@@ -1,8 +1,11 @@
-# ASD 75th Anniversary Commemorative Coin
-
 <div align="center">
+<h1 align="center">ASD 75th Anniversary Commemorative Coin Challenge</h1>
+  <br />
   <img src="ASD-50-SIDE-B-Hires.jpg" width="42%"/> 
-  <img src="ASD-50-SIDE-A-Hires.jpg" width="42%"/> 
+  <img src="ASD-50-SIDE-A-Hires.jpg" width="42%"/>
+  <br />
+  <br />
+  <p><i>Click on the Levels to show solutions.</i></p>
 </div>
 
 <details><summary><h2>Level 1</h2></summary><p>
